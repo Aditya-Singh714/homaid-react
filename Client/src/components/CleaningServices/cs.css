@@ -1,0 +1,167 @@
+.CleaningServices-Container {
+  width: 100%;
+  min-height: 89vh;
+  background-image: url("/src/assets/login-bg2.webp");
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Montserrat";
+  padding: 20px;
+  color: #00144f;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  font-size: 42px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0px 2px 23px #26395347;
+  border-radius: 20px;
+  width: 28%;
+  transition: transform 0.5s;
+}
+
+.img {
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-size: cover;
+}
+
+.cleaning-service-btn {
+    background-color: rgb(80, 159, 224);
+    border: 2px solid rgb(80, 159, 224);
+    padding: 12px;
+    width: 150px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(81, 81, 81);
+    font-weight: bold;
+}
+
+.cleaning-service-btn:hover {
+    background-color: #a7ddfa;
+    color: black;
+    border: 2px solid #a7ddfa;
+}
+
+.actions-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+ 
+  font-family: "Montserrat";
+  padding: 20px;
+  color: #00144f;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  font-size: 28px;
+}
+
+.second-text {
+  color: #828fa1;
+}
+
+.bottom-text {
+  color: #445b73;
+  font-family:  "Montserrat";
+  margin: 0;
+  font-size: 14px;
+  padding: 13px;
+}
+
+.actions {
+  background: none;
+  border: none;
+  color: purple;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+/* Media Queries */
+@media screen and (max-width:480px){
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 35px;
+  }
+  .card{
+    width: 90%;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width: 968px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heading {
+    font-size: 26px;
+  }
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .img {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 50%;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .bottom-card {
+    padding: 7px;
+  }
+  .bottom-text {
+    font-size: 18px;
+    padding: 8px;
+  }
+  .btn {
+    font-size: 10px;
+    height: 28px;
+    width: 100px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+  }
+}
+
+.star1 {
+  color: #fdd835;
+  font-size: 20px;
+  margin-left: 4px;
+  font-weight: bold;
+}
+.star2 {
+  color: black;
+  font-size: 17px;
+  margin-left: 10px;
+  font-weight: bold;
+}

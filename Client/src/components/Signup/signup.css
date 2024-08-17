@@ -1,0 +1,276 @@
+.RegisterContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/src/assets/login-bg2.webp");
+}
+
+.register-tagline{
+  font-family: 'Montserrat';
+  font-size: 18px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #010d34;
+  font-weight: 600;
+}
+
+@media screen and (max-width:968px){
+  .RegisterContainer{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.RegisterContainer-leftContent {
+  width: 35%;
+}
+@media screen and (max-width:968px){
+  .RegisterContainer-leftContent{
+    width: 90%;
+  }
+}
+.RegisterContainer-rightContent {
+  width: 85%;
+  display: flex;
+  max-width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 0px solid #fff;
+  height: 100%;
+  background-color: rgba(255,255,255,0.4);
+  background-size: cover;
+  margin-top: 40px;
+}
+@media screen and (max-width:968px){
+  .RegisterContainer-rightContent{
+    width: 80%;
+  }
+}
+.registerform-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.RegisterContainer-heading {
+  font-size: 45px;
+  color: #106262;
+  font-family: "Bree Serif";
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+@media screen and (max-width:768px){
+  .RegisterContainer-heading{
+    font-size: 32px;
+  }
+}
+.RegisterContainer-subtitle {
+  font-size: 24px;
+  width: 100%;
+}
+@media screen and (max-width:768px){
+  .RegisterContainer-subtitle{
+    font-size: 18px;
+  }
+}
+
+/*form styling */
+
+.register-title {
+  font-size: 48px;
+  font-family: "Montserrat";
+  color: #00144f;
+  font-weight: 600;
+  margin-top: 50px;
+}
+.register-input-field {
+  margin: 10px 0;
+  width: 40%;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+}
+.register-input {
+  margin-left: 10px;
+  font-size: 16px;
+  color: black;
+  background-color: transparent;
+  border: 1.5px solid gray;
+  padding: 10px;
+  font-family: 'Montserrat';
+  outline: none;
+  margin-right: 10px;
+}
+.register-btn {
+  width: 30%;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  font-family: "Montserrat";
+  cursor: pointer;
+  margin: 15px 0px;
+  background-color: rgb(107, 197, 197);
+  font-weight: 500;
+}
+.register-btn:hover {
+  background-color: #78e9df;
+  color: black;
+  box-shadow: 5px 5px 5px gray;
+}
+.social-login{
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+.social-icons {
+  background-color: transparent;
+  border: 0;
+  font-size: 24px;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+.social-icons:hover {
+  color: #000;
+  font-size: 35px;
+}
+.login-signup{
+  font-size: 18px;
+  font-family: "Bree Serif";
+  color: #000;
+  text-decoration: none;
+}
+.showLabel{
+  font-family: "Bree Serif";
+  font-size: 16px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.phone-input{
+  background-color: transparent;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Ensure the modal is above other elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.close-btn {
+  border: 1px solid black;
+  padding: 12px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin: 10px;
+}
+
+.close-btn:hover{
+  background-color: black;
+  color: white;
+}
+
+.verify-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.verify-container-button {
+  border: 0px;
+  padding: 12px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.verify-container-button:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.register-label{
+  text-align:left;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  font-family: 'Montserrat';
+}
+
+@media screen and (max-width:768px){
+  .registerform-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .register-input-field{
+    width: 90%;
+  }
+  .register-title{
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1100px){
+  .RegisterContainer{
+    height: 100vh;
+  }
+  .RegisterContainer-rightContent{
+    height: 70%;
+  }
+  .register-tagline{
+    margin-bottom: 30px;
+  }
+}
+
+.message-status{
+  color: green;
+  width: 100%;
+  text-align: center;
+}
+
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #ffffff;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

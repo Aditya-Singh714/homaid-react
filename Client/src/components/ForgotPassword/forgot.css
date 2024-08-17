@@ -1,0 +1,133 @@
+.forgot-password-container{
+    background-image: url('/src/assets/contact-us-bg.webp');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.forgot-password-image{
+    max-height: 320px;
+    height: 100%;
+    max-width: 450px;
+    background-color: transparent;
+    border-radius: 40px;
+    box-shadow: 10px 20px 15px gray, -5px 0px 20px rgb(154, 154, 154);
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    width: 40%;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+.forgot-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    background-color: transparent;
+    border-radius: 40px;
+    box-shadow: 15px 20px 15px gray, -5px 0px 20px rgb(154, 154, 154);
+    height: 70%;
+    margin: 20px;
+    margin-right: 80px;
+    width: 55%;
+}
+
+.forgot-head{
+    padding: 12px;
+    font-family: "Montserrat";
+    padding: 20px;
+    color: #00144f;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    font-size: 42px;
+}
+
+.forgot-description{
+    padding: 12px;
+    color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.forgot-input-email{
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 6px;
+    max-width: 350px;
+    margin: 10px;
+    cursor: text;
+    color: black;
+    background-color: transparent;
+    width: 90%;
+}
+
+.forgot-btn{
+    background-color: rgb(80, 159, 224);
+    border: 2px solid rgb(80, 159, 224);
+    padding: 12px;
+    width: 150px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(81, 81, 81);
+}
+
+.forgot-btn:hover{
+    background-color: #a7ddfa;
+    color: black;
+    border: 2px solid #a7ddfa;
+}
+
+@media screen and (max-width:768px){
+    .forgot-password-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .forgot-password-image{
+        margin: 10px;
+        max-height: 250px;
+        max-width: 360px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .forgot-form-container{
+        margin: 0px;
+        margin-top: 15px;
+        height: 50%;
+        margin-bottom: 15px;
+        width: 90%;
+    }
+
+    .forgot-btn{
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .forgot-head{
+        font-size: 24px;
+    }
+}
+
+.error-msg{
+    color: red;
+}
+
+.forgot-input-email:focus{
+    border: 2px solid black;
+    outline: none;
+}
+
+@media screen and (min-width:768px) and (max-width:1100px){
+    .forgot-form-container{
+        height: 30%;
+    }
+}

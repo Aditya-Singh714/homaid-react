@@ -1,0 +1,179 @@
+.section2 {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image:linear-gradient( #d1d6db,white,rgb(193, 219, 243)) ;
+  /* background-image: url("/src/assets/about-us-bg.webp"); */
+  padding-top: 10px;
+  /* transition: opacity 0.2s ease; /* Add opacity transition */
+  /* opacity: 0; Initially hide the section */
+  background-size: cover;
+}
+
+.section2.visible {
+  opacity: 1; /* Show the section when visible */
+}
+
+@media screen and (max-width: 768px) {
+  .section2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.carousel {
+  width: 40%;
+  background-color: transparent;
+  padding-left: 0px;
+}
+
+@media screen and (max-width: 786px) {
+  .carousel {
+    width: 100vw;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 10px;
+    border-top-right-radius: 30px;
+  }
+}
+
+.carousel-img {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 0.5s ease; /* Add transform transition */
+  border-top-right-radius: 60px;
+  /* height: 450px; */
+}
+
+.section2-content {
+  width: 40%;
+}
+
+@media screen and (max-width: 786px) {
+  .section2-content {
+    width: 90%;
+  }
+}
+
+.section2-heading {
+  font-family: "Barlow Condensed, sans-serif";
+  font-size: 38px;
+  color: black;
+  padding: 10px;
+  text-align: left;
+}
+
+.section2-subtitle {
+  text-align: left;
+  padding: 10px;
+  font-size: 20px;
+  font-family:  "Roboto";
+  color: black;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media screen and (max-width: 768px) {
+  .section2-subtitle {
+    font-size: 18px;
+  }
+}
+
+.section-2-btn {
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+  height: 45px;
+  width: 180px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  border: 1px solid black;
+}
+
+.section-2-btn:hover {
+  background: transparent;
+  border: 0.5px solid black;
+}
+.carousel {
+  width: 40%;
+  background-color: transparent;
+  padding-left: 0px;
+  /* transition: opacity 0.1s ease, transform 0.5s ease; Add transform transition */
+  /* opacity: 0; Initially hide the section */
+  /* transform: scale(0.5); Initially scale down */
+}
+
+.carousel.visible {
+  opacity: 1; /* Show the section when visible */
+  transform: scale(1); /* Scale up when visible */
+}
+
+/* Animation classes using animate.css */
+.animate__fadeInLeft {
+  animation: fadeInLeft 1s forwards;
+}
+
+.animate__fadeInRight {
+  animation: fadeInRight 1s forwards;
+}
+
+.animate__zoomIn {
+  animation: zoomIn 1s forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width:768px){
+  .section2-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel{
+    min-width:220px;
+    max-width: 500px;
+    width:100%;
+    margin-left: 10px;
+  }
+  .carousel-img{
+    height: 350px;
+    width: 100%;
+  }
+}

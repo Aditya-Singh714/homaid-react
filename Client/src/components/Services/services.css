@@ -1,0 +1,247 @@
+.section3 {
+  /* background-image:linear-gradient(rgb(140, 135, 135), #d1d6db,white); */
+  background-image: url("/src/assets/alternative-service-section.webp");
+  background-size: cover;
+  padding: 10px 0px;
+  text-align: center;
+  /* opacity: 0; Initially hide the section */
+  /* transition: opacity 0.5s ease; Add opacity transition */
+  padding-top: 50px;
+}
+
+.section3.visible {
+  opacity: 1; /* Show the section when visible */
+}
+
+.section3-heading {
+  font-size: 40px;
+  font-family: "Noto Sans Glagolitic", sans-serif;
+  margin-top: 3%;
+}
+
+.section3-heading.animate__fadeInUp {
+  animation: fadeInUp 1s forwards;
+}
+
+@media screen and (max-width: 786px) {
+  .section3-heading {
+    font-size: 26px;
+  }
+}
+
+.section3-container {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+  padding: 100px 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .section3-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px 50px;
+    padding: 100px 50px;
+  }
+}
+
+.section3-container .custom-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 450px;
+  max-width: 100%;
+  height: 350px;
+  background: rgba(183, 225, 161, 0.3);
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width:768px){
+  .custom-card{
+    margin-bottom: 70px;
+  }
+  .section3-container .custom-card {
+    height: 450px;
+  }
+}
+
+
+.section3-container .custom-card .img-box {
+  position: absolute;
+  top: 20px;
+  width: 400px;
+  height: 220px;
+  background: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.section3-container .custom-card .img-box {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.section3-container .custom-card .img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section3-container .custom-card .custom-content {
+  position: absolute;
+  top: 252px;
+  width: 100%;
+  height: 35px;
+  padding: 0 30px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.section3-container .custom-card .custom-content {
+  top: 130px;
+  height: 270px;
+  opacity: 1;
+  pointer-events: auto;
+  transition-delay: 0.2s;
+}
+
+.section3-container .custom-card.animate__fadeInLeft {
+  animation: fadeInLeft 1s forwards;
+}
+
+.section3-container .custom-card.animate__fadeInRight {
+  animation: fadeInRight 1s forwards;
+}
+
+.section3-container .custom-card .custom-content .section3-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+  font-family: 'Montserrat';
+}
+
+.section3-container .custom-card .custom-content .section3-subtitle {
+  color: #000;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+.section3-container .custom-card .custom-content .services-btn {
+  position: relative;
+  /* top: 15px; */
+  display: inline-block;
+  padding: 12px 25px;
+  text-decoration: none;
+  background: rgba(0, 0, 0);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: blinking 1s infinite;
+  border: 0px solid black;
+  font-family: 'Montserrat';
+  box-shadow:10px 10px 10px rgb(90, 90, 90);
+}
+
+@keyframes blinking {
+  0% {
+    border: 0.7px solid rgb(242, 242, 242);
+  }
+  50% {
+    border: 3.9px solid rgb(53, 49, 49);
+  }
+  100% {
+    border: 0.7px solid rgb(170, 166, 166);
+  }
+}
+
+.section3-container .custom-card .custom-content .services-btn:hover {
+  /* opacity: 0.8; */
+  color: #fff;
+  /* background-color: #cccccc; */
+  font-weight: 600;
+  box-shadow:2px 8px 10px rgb(146, 146, 146);
+}
+
+@media (max-width: 768px) {
+  .section3-container .custom-card {
+    width: 230px;
+    border-radius: 15px;
+  }
+
+  .section3-container .custom-card .img-box {
+    width: 185px;
+    border-radius: 10px;
+  }
+
+  .section3-container .custom-card .custom-content .section3-subtitle {
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+
+  .section3-container .custom-card .custom-content .services-btn {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .custom-card {
+    margin-top: 32px;
+  }
+}
+
+/* CSS Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width:768px){
+  .section3{
+    padding-top: 90px;
+  }
+}

@@ -1,0 +1,210 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.AboutSection-Container{
+  min-height: 100vh;
+}
+
+.banner-image{
+  max-height:850px;
+  width: 100%;
+  margin: 0px;
+}
+
+.aboutMain-Container{
+  /* background-image: url("/src/assets/AboutUs-bg.jpeg"); */
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 45px;
+  position: relative;
+  &::before{
+    content: '';
+    background-color: rgb(0,0,0,0.35);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.75;
+  }
+}
+.about-content{
+  padding-right: 25px;
+}
+.about-title{
+  font-family: "Bree Serif";
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+}
+
+.about-subtitle{
+  position: relative;
+  color: #fff;
+  font-size: 45px;
+  font-family: "Bree Serif";
+  font-weight: bold;
+}
+
+@media screen and (max-width:768px){
+  .aboutMain-Container{
+    align-items: center;
+    background-image: url("/src/assets/AboutUs-sm-bg.jpeg");
+    font-size: 32px;
+    text-align: center;
+  }
+  .about-content{
+    padding-right: 0px;
+  }
+  .about-subtitle{
+    font-size: 32px;
+  }
+}
+.homaidHeadingAbout{
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  
+}
+.homaidParaAbout{
+  font-size: 18px;
+  color: #000;
+  padding-top: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+.TeamDetails{
+  margin: 0px;
+  text-align: center;
+  background-image: url('/src/assets/alternative-service-section.webp');
+  background-size: cover;
+}
+.TeamDetails-heading{
+  font-size: 55px;
+  font-family: 'Merriweather';
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: rgb(0, 0, 99);
+}
+.members{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.team-img{
+  width: 250px;
+  height: 250px;
+  /* border: 1px solid blue; */
+  margin: 5px;
+  background-color: transparent;
+}
+.team-name{
+  font-family: "Roboto";
+  color: #4a4a4a;
+  font-size: 24px;
+}
+.teamMember-position{
+  font-family: "Roboto";
+  color: #4a4a4a;
+  font-size: 20px;
+}
+
+/*FAQ Styling*/
+
+.FAQs{
+  padding: 10px 0;
+  background-image: url('/src/assets/about-us-bg.webp');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faq-title{
+  font-size: 36px;
+  font-family: "Bree Serif";
+  color: #4a4a4a;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+}
+.details-container{
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+.questions{
+  align-self: center;
+  padding: 0 15px;
+}
+
+@media (min-width:768px){
+  .questions{
+    align-self: flex-start;
+  }
+  .details-container{
+    display: block;
+  }
+}
+@media (max-width:768px){
+  .faq-title{
+    font-size: 28px;
+  }
+}
+.target-icon{
+  color: red;
+  margin-right: 10px;
+  width: 50%;
+}
+.question{
+  font-size: 24px;
+  color: #000;
+  font-weight: normal;
+  width: 100%;
+  max-width: 800px;
+}
+.answer{
+  font-size: 22px;
+  text-align: justify;
+}
+
+.horizontal-line{
+  height: 1px;  
+  background-color: gray;  
+  border: none;
+  margin-left: 20px; 
+}
+
+/* CSS for the details container */
+.details-container {
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* CSS for the summary inside the details container */
+.question {
+  outline: none; /* Remove default focus outline */
+}
+
+/* CSS for the content inside the details container */
+.details-container[open] .answer {
+  animation: fadein 0.3s ease-in-out; /* Apply fade-in animation when details are open */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0; /* Start with 0 opacity */
+  }
+  to {
+    opacity: 1; /* End with full opacity */
+  }
+}
