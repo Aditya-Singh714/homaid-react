@@ -1,4 +1,5 @@
 
+import Footer from "../Footer/footer";
 import "./refundPolicy.css";
 import LoginNavbar from "/src/components/Navbar/LoginNavbar.jsx"; 
 
@@ -97,6 +98,7 @@ const RefundPolicy = () => {
           </p>
         </footer>
       </div>
+      <Footer />
     </>
   );
 };

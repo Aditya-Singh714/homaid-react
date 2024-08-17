@@ -1,4 +1,5 @@
 
+import Footer from "../Footer/footer";
 import "./privacyPolicy.css";
 import LoginNavbar from "/src/components/Navbar/LoginNavbar.jsx"; 
 
@@ -97,6 +98,7 @@ const PrivacyPolicy = () => {
           </p>
         </footer>
       </div>
+      <Footer />
     </>
   );
 };
