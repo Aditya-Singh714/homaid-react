@@ -102,6 +102,7 @@
   list-style: none;
   color: grey;
 }
+
 .social-handles {
   display: flex;
   flex-direction: row;
@@ -266,6 +267,7 @@ font-size: 18px;
 }
 
 .social-handles-footer{
+  list-style: none;
   margin-right: 10px;
 }
 

@@ -7,7 +7,7 @@ const RefundPolicy = () => {
   return (
     <>
       <LoginNavbar />
-      <div className="terms-container">
+      <div className="refund-container" style={{margin: 30}}>
         <h1>Refund Policy</h1>
 
         <h2>Refund Policy of HOMAID Services</h2>
@@ -64,7 +64,7 @@ const RefundPolicy = () => {
           .
         </p>
 
-        <footer className="footer">
+        {/* <footer className="footer">
           <p>&copy; 2024 HOMAID Services. All rights reserved.</p>
           <p>
             Follow us on
@@ -96,7 +96,7 @@ const RefundPolicy = () => {
             </a>
             .
           </p>
-        </footer>
+        </footer> */}
       </div>
       <Footer />
     </>

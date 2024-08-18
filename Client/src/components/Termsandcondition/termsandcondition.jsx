@@ -65,7 +65,7 @@ const TermsAndConditions = () => {
           .
         </p>
 
-        <footer className="footer">
+        {/* <footer className="footer">
           <p>&copy; 2024 HOMAID Services. All rights reserved.</p>
           <p>
             Follow us on
@@ -97,7 +97,7 @@ const TermsAndConditions = () => {
             </a>
             .
           </p>
-        </footer>
+        </footer> */}
       </div>
       <Footer />
     </>
