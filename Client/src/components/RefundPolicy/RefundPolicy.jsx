@@ -1,5 +1,6 @@
 
 import Footer from "../Footer/footer";
+import Whatsapp from "../Whatsapp/whatsapp";
 import "./refundPolicy.css";
 import LoginNavbar from "/src/components/Navbar/LoginNavbar.jsx"; 
 
@@ -57,9 +58,9 @@ const RefundPolicy = () => {
         <p>
           If you have any questions about these Terms and Conditions, please
           contact us at
-          <a href="mailto:supporthomaidserviceshyd@gmail.com">
+          <a href="mailto:contact@homaid.in">
             {" "}
-            supporthomaidserviceshyd@gmail.com
+            support contact@homaid.in
           </a>
           .
         </p>
@@ -99,6 +100,7 @@ const RefundPolicy = () => {
         </footer> */}
       </div>
       <Footer />
+      <Whatsapp />
     </>
   );
 };

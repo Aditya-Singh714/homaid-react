@@ -3,6 +3,7 @@ import React from "react";
 import "./termsandcondition.css";
 import LoginNavbar from "../Navbar/loginNavbar";
 import Footer from "../Footer/footer";
+import Whatsapp from "../Whatsapp/whatsapp";
 
 const TermsAndConditions = () => {
   return (
@@ -58,9 +59,9 @@ const TermsAndConditions = () => {
         <p>
           If you have any questions about these Terms and Conditions, please
           contact us at
-          <a href="mailto:supporthomaidserviceshyd@gmail.com">
+          <a href="mailto:contact@homaid.in">
             {" "}
-            support homaidserviceshyd@gmail.com
+            support contact@homaid.in
           </a>
           .
         </p>
@@ -99,6 +100,7 @@ const TermsAndConditions = () => {
           </p>
         </footer> */}
       </div>
+      <Whatsapp />
       <Footer />
     </>
   );
